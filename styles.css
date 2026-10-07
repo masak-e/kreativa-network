@@ -374,7 +374,7 @@ body.gated.loaded .lead .hl{animation:hl .7s ease backwards;animation-delay:var(
 
 /* ===== RTL (ARAB) ===== */
 [dir="rtl"] .kicker,[dir="rtl"] .stat .label,[dir="rtl"] .brand-text,[dir="rtl"] .brand-text small,[dir="rtl"] .marquee,[dir="rtl"] .pre-brand,[dir="rtl"] .pre-brand em,[dir="rtl"] .hot-tag,[dir="rtl"] .lang-btn{letter-spacing:0}
-[dir="rtl"] body,[dir="rtl"] h1,[dir="rtl"] h2,[dir="rtl"] h3{font-family:'Sora','Inter',Tahoma,Arial,sans-serif}
+[dir="rtl"] body,[dir="rtl"] h1,[dir="rtl"] h2,[dir="rtl"] h3,[dir="rtl"] .brand-text,[dir="rtl"] .btn,[dir="rtl"] button,[dir="rtl"] input,[dir="rtl"] select{font-family:'IBM Plex Sans Arabic','Inter',Tahoma,Arial,sans-serif}
 [dir="rtl"] .check li{padding:7px 32px 7px 0}
 [dir="rtl"] .check li::before{left:auto;right:0}
 [dir="rtl"] .avatars span{margin-left:0;margin-right:-10px}
