@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kreativa Network — Jasa Kreatif & Digital (IT, Software, Advertising, Design)</title>
+<meta name="description" content="Kreativa Network — partner jasa kreatif & digital: IT solution, software development, advertising, dan design. Konsultasi gratis via WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<noscript><style>.preloader{display:none!important}</style></noscript>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='0'><stop offset='0' stop-color='%230A2472'/><stop offset='1' stop-color='%231490FF'/></linearGradient></defs><rect width='100' height='100' rx='22' fill='white'/><path d='M22 14h18v72H22zM40 50L64 14h22L54 50zM44 58l12-14 32 42H66z' fill='url(%23g)'/></svg>">
+</head>
+<body>
+
+<!-- ===== WELCOME PRELOADER ===== -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-inner">
+    <div class="pre-mark">
+      <svg viewBox="0 0 120 120">
+        <circle cx="60" cy="60" r="52" fill="none" stroke="#00C2FF" stroke-width="5" stroke-dasharray="10 9" class="sp"/>
+        <circle cx="60" cy="60" r="40" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="3" stroke-dasharray="4 7" class="spr"/>
+      </svg>
+      <span class="pre-k"><span class="logo-crop" role="img" aria-label="Kreativa Network"></span></span>
+    </div>
+    <p class="pre-brand"><span>K</span><span>R</span><span>E</span><span>A</span><span>T</span><span>I</span><span>V</span><span>A</span><em>NETWORK</em></p>
+    <div class="pre-bar"><i></i></div>
+    <p class="pre-num"><span id="preNum">0</span>%</p>
+    <p class="pre-text">Menyiapkan pengalaman digital Anda…</p>
+  </div>
+</div>
+
+<!-- ===== SVG SPRITE: IKON MEKANIS ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="i-gear" viewBox="0 0 64 64">
+  <g fill="none" stroke="currentColor" stroke-width="7" stroke-dasharray="7 6.5" class="sp"><circle cx="32" cy="32" r="18"/></g>
+  <circle cx="32" cy="32" r="7" fill="none" stroke="currentColor" stroke-width="4"/>
+  <circle cx="32" cy="32" r="2.5" fill="currentColor"/>
+</symbol>
+<symbol id="i-gears" viewBox="0 0 64 64">
+  <g fill="none" stroke="currentColor" stroke-width="7" stroke-dasharray="6 5.5" class="sp"><circle cx="24" cy="37" r="13"/></g>
+  <circle cx="24" cy="37" r="3.5" fill="currentColor"/>
+  <g fill="none" stroke="currentColor" stroke-width="6" stroke-dasharray="5 4.5" class="spr"><circle cx="46" cy="21" r="9"/></g>
+  <circle cx="46" cy="21" r="2.5" fill="currentColor"/>
+</symbol>
+<symbol id="i-chip" viewBox="0 0 64 64">
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round">
+    <rect x="16" y="16" width="32" height="32" rx="6"/>
+    <rect x="25" y="25" width="14" height="14" rx="2"/>
+    <path d="M22 16V8M32 16V8M42 16V8M22 56v-8M32 56v-8M42 56v-8M16 22H8M16 32H8M16 42H8M56 22h-8M56 32h-8M56 42h-8"/>
+  </g>
+  <circle cx="32" cy="32" r="3.5" fill="currentColor" class="blink"/>
+</symbol>
+<symbol id="i-mega" viewBox="0 0 64 64">
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 24h11l17-9v34l-17-9H8z"/>
+    <path d="M20 40l-2 12h8l2-12"/>
+    <path d="M42 23a11 11 0 0 1 0 18" class="wv"/>
+    <path d="M48 17a19 19 0 0 1 0 30" class="wv d2"/>
+  </g>
+</symbol>
+<symbol id="i-pen" viewBox="0 0 64 64">
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 5L45 30 32 59 19 30z"/>
+    <circle cx="32" cy="28" r="4"/>
+    <path d="M10 59h12" class="dm"/>
+  </g>
+</symbol>
+<symbol id="i-trophy" viewBox="0 0 64 64">
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 8h26v13c0 11-7 17-13 17s-13-6-13-17z"/>
+    <path d="M19 12H10c0 9 4 14 10 15M45 12h9c0 9-4 14-10 15"/>
+    <path d="M32 38v7M23 49h18"/>
+    <path d="M25 14v7" class="blink"/>
+  </g>
+</symbol>
+<symbol id="i-rocket" viewBox="0 0 64 64">
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 5c8 9 10 19 8 29l-8 6-8-6c-2-10 0-20 8-29z"/>
+    <circle cx="32" cy="22" r="4.5"/>
+    <path d="M25 33l-8 11 9-3M39 33l8 11-9-3"/>
+    <path d="M12 20v8M6 26v8"/>
+  </g>
+  <path d="M28 44h8l-4 13z" fill="currentColor" class="fl"/>
+</symbol>
+<symbol id="i-gem" viewBox="0 0 64 64">
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 22L32 9l19 13-19 33z"/>
+    <path d="M13 22h38M32 9L24 22l8 33M32 9l8 13-8 33"/>
+  </g>
+  <path d="M49 6l1.5 4 4 1.5-4 1.5-1.5 4-1.5-4-4-1.5 4-1.5z" fill="currentColor" class="blink"/>
+</symbol>
+<symbol id="i-shield" viewBox="0 0 64 64">
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 5l19 8v15c0 12-9 21-19 25C22 49 13 40 13 28V13z"/>
+    <path d="M23 29l7 7 13-14" class="dr"/>
+  </g>
+</symbol>
+<symbol id="i-chart" viewBox="0 0 64 64">
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round">
+    <path d="M9 9v46h46"/>
+  </g>
+  <rect x="18" y="36" width="8" height="14" fill="currentColor" class="br"/>
+  <rect x="30" y="28" width="8" height="22" fill="currentColor" class="br d2"/>
+  <rect x="42" y="18" width="8" height="32" fill="currentColor" class="br d3"/>
+  <path d="M16 32l12-7 8 4 14-13M50 16h-8M50 16v8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="dr"/>
+</symbol>
+<symbol id="i-hub" viewBox="0 0 64 64">
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round">
+    <path d="M27 27L17 19M37 27l10-8M27 37l-10 8M37 37l10 8" class="dm"/>
+    <circle cx="32" cy="32" r="7"/>
+    <circle cx="13" cy="15" r="4"/><circle cx="51" cy="15" r="4"/>
+    <circle cx="13" cy="49" r="4"/><circle cx="51" cy="49" r="4"/>
+  </g>
+  <circle cx="32" cy="32" r="2.5" fill="currentColor" class="blink"/>
+</symbol>
+<symbol id="i-globe" viewBox="0 0 64 64">
+  <g fill="none" stroke="currentColor" stroke-width="4">
+    <circle cx="32" cy="32" r="17"/>
+    <ellipse cx="32" cy="32" rx="8" ry="17"/>
+    <path d="M15 32h34"/>
+  </g>
+  <g class="or">
+    <ellipse cx="32" cy="32" rx="26" ry="10" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="4 6" transform="rotate(-20 32 32)"/>
+    <circle cx="56" cy="24" r="3.5" fill="currentColor"/>
+  </g>
+</symbol>
+<symbol id="i-check" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" stroke-width="4"/>
+  <path d="M22 33l8 8 16-17" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="dr"/>
+</symbol>
+<symbol id="i-cart" viewBox="0 0 64 64">
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 12h6l7 30h22l7-22H18"/>
+    <circle cx="25" cy="52" r="3.5"/><circle cx="43" cy="52" r="3.5"/>
+  </g>
+</symbol>
+<symbol id="i-cup" viewBox="0 0 64 64">
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 16h32v9c0 12-7 19-16 19s-16-7-16-19z"/>
+    <path d="M48 20h3c5 4 5 12-2 16"/>
+    <path d="M26 10c-3-3 3-5 0-8M38 10c-3-3 3-5 0-8" class="wv"/>
+  </g>
+</symbol>
+<symbol id="i-building" viewBox="0 0 64 64">
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 52V22l18-12 18 12v30"/>
+    <path d="M22 30v14M32 30v14M42 30v14M10 52h44"/>
+  </g>
+</symbol>
+<symbol id="i-play" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="21" fill="none" stroke="currentColor" stroke-width="4"/>
+  <path d="M27 22l15 10-15 10z" fill="currentColor" class="blink"/>
+</symbol>
+<symbol id="i-bolt" viewBox="0 0 64 64">
+  <path d="M35 5L17 37h11l-1 22 20-32H35z" fill="currentColor"/>
+</symbol>
+<symbol id="i-mail" viewBox="0 0 64 64">
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="10" y="18" width="44" height="28" rx="4"/>
+    <path d="M10 20l22 16 22-16"/>
+  </g>
+</symbol>
+<symbol id="i-clock" viewBox="0 0 64 64">
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round">
+    <circle cx="32" cy="32" r="21"/>
+    <path d="M32 32V20M32 32l9 6"/>
+  </g>
+</symbol>
+<symbol id="i-wa" viewBox="0 0 32 32">
+  <path fill="currentColor" d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 2 6.5L4 29l7.7-2c1.8 1 3.9 1.5 4.3 1.5 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.5 0-3-.4-4.3-1.2l-.3-.2-4.6 1.2 1.2-4.5-.2-.3c-.9-1.4-1.4-3-1.4-4.7C6.5 9.8 10.8 5.5 16 5.5S25.5 9.8 25.5 15 21.2 24.8 16 24.8zm5.2-7.1c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 1.1-.2.2-.3.3-.7.1-.3-.1-1.4-.5-2.7-1.6-.9-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.6l.9-1c.1-.2.2-.4.3-.5.1-.2 0-.3 0-.4-.1-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.2-.8.7-.3.5-1 1.2-1 3s1.1 3.5 1.2 3.7c.1.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/>
+</symbol>
+<!-- logo asli: memakai file logo.png -->
+</defs>
+</svg>
+
+<!-- ===== TOPBAR ===== -->
+<div class="topbar">
+  <span><svg class="mi" aria-hidden="true"><use href="#i-bolt"/></svg> Promo bulan ini: <strong>Diskon 20%</strong> pembuatan company profile + logo branding</span>
+  <a href="https://wa.me/62895637319465?text=Halo%20Kreativa%20Network!%20Saya%20tertarik%20dengan%20promo%20diskon%2020%25." target="_blank" rel="noopener">Klaim Promo →</a>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#beranda" class="brand">
+      <span class="brand-logo">
+        <span class="logo-crop nav-mark" role="img" aria-label="Logo Kreativa Network"></span>
+      </span>
+      <span class="brand-text">KREATIVA<small>NETWORK</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#beranda">Beranda</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#keunggulan">Keunggulan</a>
+      <a href="#portofolio">Portofolio</a>
+      <a href="#harga">Harga</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="https://wa.me/62895637319465?text=Halo%20Kreativa%20Network!%20Saya%20ingin%20konsultasi%20gratis." target="_blank" rel="noopener"><svg class="mi" aria-hidden="true"><use href="#i-wa"/></svg> Konsultasi Gratis</a>
+      <button class="hamburger" id="hamburger" aria-label="Buka menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="beranda">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <span class="badge"><svg class="mi" aria-hidden="true"><use href="#i-gear"/></svg> Partner Kreatif & Digital #1 untuk UMKM – Korporat</span>
+      <h1>Wujudkan Brand <span class="grad grad-anim hl-word">Impian Anda<svg class="u-line" viewBox="0 0 220 14" preserveAspectRatio="none" aria-hidden="true"><path d="M4 10 C 60 3, 160 3, 216 8"/></svg></span><br>Jadi <span class="rot"><span id="rotWord">Mesin Penjualan</span></span></h1>
+      <p class="lead">Kreativa Network membantu bisnis <span class="hl" style="--d:1s">naik kelas</span> lewat <strong>IT solution, software, advertising, & design</strong> — <span class="hl" style="--d:1.15s">satu pintu</span>, <span class="hl" style="--d:1.3s">hasil terukur</span>, <span class="hl" style="--d:1.45s">garansi revisi</span>.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary btn-lg" href="https://wa.me/62895637319465?text=Halo%20Kreativa%20Network!%20Saya%20ingin%20konsultasi%20gratis%20tentang%20kebutuhan%20digital%20bisnis%20saya." target="_blank" rel="noopener"><svg class="mi" aria-hidden="true"><use href="#i-wa"/></svg> Chat WhatsApp Sekarang</a>
+        <a class="btn btn-ghost btn-lg" href="#layanan">Lihat Layanan ↓</a>
+      </div>
+      <div class="hero-trust">
+        <div class="avatars"><span>AR</span><span>BT</span><span>CL</span><span>DS</span><span>+</span></div>
+        <p><strong>120+ klien puas</strong> · rating 4.9/5 dari ulasan terverifikasi</p>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="mockup">
+        <div class="mockup-bar"><i></i><i></i><i></i><span>kreativa-network.id</span></div>
+        <div class="mockup-body">
+          <div class="mockup-stat"><small>Omzet Klien</small><strong>+187%</strong><em>▲ 6 bulan</em></div>
+          <div class="mockup-bars"><i style="--h:40%"></i><i style="--h:65%"></i><i style="--h:50%"></i><i style="--h:85%"></i><i style="--h:100%"></i></div>
+          <div class="mockup-row"><span><svg class="mi" aria-hidden="true"><use href="#i-globe"/></svg> Web Company Profile</span><b class="ok">Live</b></div>
+          <div class="mockup-row"><span><svg class="mi" aria-hidden="true"><use href="#i-mega"/></svg> Iklan Meta Ads</span><b class="ok">ROAS 4.8x</b></div>
+          <div class="mockup-row"><span><svg class="mi" aria-hidden="true"><use href="#i-pen"/></svg> Rebranding Logo</span><b class="ok">Done</b></div>
+        </div>
+        <div class="float-card f1"><svg class="mi" aria-hidden="true"><use href="#i-check"/></svg> Revisi Tanpa Batas*</div>
+        <div class="float-card f2"><svg class="mi" aria-hidden="true"><use href="#i-gears"/></svg> Launch &lt; 14 Hari</div>
+      </div>
+    </div>
+  </div>
+  <div class="container stats reveal">
+    <div class="stat"><strong><span class="counter" data-target="250">0</span><span class="suffix">+</span></strong><span class="label">Proyek Selesai</span></div>
+    <div class="stat"><strong><span class="counter" data-target="120">0</span><span class="suffix">+</span></strong><span class="label">Klien Aktif</span></div>
+    <div class="stat"><strong><span class="counter" data-target="8">0</span><span class="suffix">thn</span></strong><span class="label">Pengalaman</span></div>
+    <div class="stat"><strong><span class="counter" data-target="98">0</span><span class="suffix">%</span></strong><span class="label">Klien Puas</span></div>
+  </div>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>WEB DEVELOPMENT</span><span>•</span><span>MOBILE APP</span><span>•</span><span>BRANDING</span><span>•</span><span>META ADS</span><span>•</span><span>SEO</span><span>•</span><span>UI/UX DESIGN</span><span>•</span><span>SOCIAL MEDIA</span><span>•</span><span>COMPANY PROFILE</span><span>•</span>
+    <span>WEB DEVELOPMENT</span><span>•</span><span>MOBILE APP</span><span>•</span><span>BRANDING</span><span>•</span><span>META ADS</span><span>•</span><span>SEO</span><span>•</span><span>UI/UX DESIGN</span><span>•</span><span>SOCIAL MEDIA</span><span>•</span><span>COMPANY PROFILE</span><span>•</span>
+  </div>
+</div>
+
+<!-- ===== LAYANAN ===== -->
+<section class="section" id="layanan">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">LAYANAN UNGGULAN</span>
+      <h2>Satu Partner untuk Semua Kebutuhan <span class="grad">Digital Anda</span></h2>
+      <p>Klik tiap layanan untuk detail, lalu langsung konsultasikan via WhatsApp.</p>
+    </div>
+    <div class="svc-tabs reveal" role="tablist">
+      <button class="svc-tab active" data-svc="it"><svg class="mi" aria-hidden="true"><use href="#i-chip"/></svg> IT Solution</button>
+      <button class="svc-tab" data-svc="software"><svg class="mi" aria-hidden="true"><use href="#i-gears"/></svg> Software</button>
+      <button class="svc-tab" data-svc="ads"><svg class="mi" aria-hidden="true"><use href="#i-mega"/></svg> Advertising</button>
+      <button class="svc-tab" data-svc="design"><svg class="mi" aria-hidden="true"><use href="#i-pen"/></svg> Design</button>
+    </div>
+    <div class="svc-panels reveal">
+      <article class="svc-panel active" id="panel-it">
+        <div class="svc-info">
+          <h3>IT Solution & Infrastruktur</h3>
+          <p>Fondasi teknologi yang aman, cepat, dan siap scale untuk operasional bisnis Anda.</p>
+          <ul class="check">
+            <li>Pembuatan website company profile, e-commerce & landing page</li>
+            <li>Maintenance, keamanan & backup server berkala</li>
+            <li>Integrasi sistem: payment gateway, CRM, ERP, API</li>
+            <li>Konsultasi & audit IT untuk efisiensi biaya</li>
+          </ul>
+          <p class="price">Mulai dari <strong>Rp 1,5 jt</strong></p>
+          <a class="btn btn-primary" data-wa="Halo Kreativa Network! Saya butuh layanan IT Solution." target="_blank" rel="noopener" href="https://wa.me/62895637319465">Pilih Layanan Ini →</a>
+        </div>
+        <div class="svc-art a1"><svg class="art" aria-hidden="true"><use href="#i-globe"/></svg><b>Website cepat, aman & SEO-friendly</b></div>
+      </article>
+      <article class="svc-panel" id="panel-software">
+        <div class="svc-info">
+          <h3>Software Development</h3>
+          <p>Aplikasi custom yang memangkas kerja manual dan mempercepat pertumbuhan.</p>
+          <ul class="check">
+            <li>Aplikasi mobile Android & iOS (Flutter / React Native)</li>
+            <li>Sistem informasi: POS, inventory, HRIS, akademik, klinik</li>
+            <li>Dashboard & otomasi laporan real-time</li>
+            <li>Source code milik Anda + dokumentasi lengkap</li>
+          </ul>
+          <p class="price">Mulai dari <strong>Rp 8 jt</strong></p>
+          <a class="btn btn-primary" data-wa="Halo Kreativa Network! Saya butuh pembuatan software/aplikasi." target="_blank" rel="noopener" href="https://wa.me/62895637319465">Pilih Layanan Ini →</a>
+        </div>
+        <div class="svc-art a2"><svg class="art" aria-hidden="true"><use href="#i-gears"/></svg><b>Custom app sesuai alur bisnis Anda</b></div>
+      </article>
+      <article class="svc-panel" id="panel-ads">
+        <div class="svc-info">
+          <h3>Advertising & Digital Marketing</h3>
+          <p>Iklan yang datanya transparan — setiap rupiah tercatat hasilnya.</p>
+          <ul class="check">
+            <li>Meta Ads, Google Ads, TikTok Ads — setup + optimasi</li>
+            <li>SEO & content marketing untuk traffic organik</li>
+            <li>Social media management + copywriting persuasif</li>
+            <li>Laporan performa mingguan yang mudah dibaca</li>
+          </ul>
+          <p class="price">Mulai dari <strong>Rp 2,5 jt/bln</strong></p>
+          <a class="btn btn-primary" data-wa="Halo Kreativa Network! Saya butuh layanan advertising/digital marketing." target="_blank" rel="noopener" href="https://wa.me/62895637319465">Pilih Layanan Ini →</a>
+        </div>
+        <div class="svc-art a3"><svg class="art" aria-hidden="true"><use href="#i-mega"/></svg><b>Rata-rata ROAS klien 4–6x</b></div>
+      </article>
+      <article class="svc-panel" id="panel-design">
+        <div class="svc-info">
+          <h3>Design & Branding</h3>
+          <p>Visual premium yang membuat brand terlihat mahal dan dipercaya.</p>
+          <ul class="check">
+            <li>Logo & brand identity (guideline lengkap)</li>
+            <li>UI/UX design untuk web & aplikasi</li>
+            <li>Desain feed, banner, kemasan & company profile</li>
+            <li>Garansi revisi sampai cocok*</li>
+          </ul>
+          <p class="price">Mulai dari <strong>Rp 750 rb</strong></p>
+          <a class="btn btn-primary" data-wa="Halo Kreativa Network! Saya butuh layanan design/branding." target="_blank" rel="noopener" href="https://wa.me/62895637319465">Pilih Layanan Ini →</a>
+        </div>
+        <div class="svc-art a4"><svg class="art" aria-hidden="true"><use href="#i-pen"/></svg><b>Brand guideline siap cetak & digital</b></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== KEUNGGULAN ===== -->
+<section class="section alt" id="keunggulan">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">KENAPA KAMI</span>
+      <h2>Alasan 120+ Bisnis Percaya <span class="grad">Kreativa Network</span></h2>
+    </div>
+    <div class="grid3">
+      <div class="card reveal"><div class="icon"><svg aria-hidden="true"><use href="#i-trophy"/></svg></div><h3>30+ Tahun Akumulasi Pengalaman</h3><p>Tim senior lintas bidang — strategi marketing yang terbukti, bukan coba-coba.</p></div>
+      <div class="card reveal"><div class="icon"><svg aria-hidden="true"><use href="#i-rocket"/></svg></div><h3>Cepat & Tepat Waktu</h3><p>Timeline jelas di kontrak. Website rilis &lt; 14 hari, revisi respons &lt; 1×24 jam.</p></div>
+      <div class="card reveal"><div class="icon"><svg aria-hidden="true"><use href="#i-gem"/></svg></div><h3>Harga Transparan</h3><p>Rincian biaya di awal, tanpa biaya siluman. Fleksibel untuk budget UMKM.</p></div>
+      <div class="card reveal"><div class="icon"><svg aria-hidden="true"><use href="#i-shield"/></svg></div><h3>Garansi & After-Sales</h3><p>Garansi revisi, garansi bug 30 hari, dan pendampingan pasca-launch.</p></div>
+      <div class="card reveal"><div class="icon"><svg aria-hidden="true"><use href="#i-chart"/></svg></div><h3>Berbasis Data</h3><p>Setiap keputusan didukung riset & analitik — hasil bisa diukur, bukan sekadar "bagus".</p></div>
+      <div class="card reveal"><div class="icon"><svg aria-hidden="true"><use href="#i-hub"/></svg></div><h3>Satu Pintu Semua Beres</h3><p>IT, software, iklan, desain dalam satu tim — hemat koordinasi & biaya.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PORTOFOLIO ===== -->
+<section class="section" id="portofolio">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">PORTOFOLIO</span>
+      <h2>Karya yang Berbicara <span class="grad">Lewat Angka</span></h2>
+      <div class="filter">
+        <button class="chip active" data-filter="all">Semua</button>
+        <button class="chip" data-filter="web">Website & App</button>
+        <button class="chip" data-filter="brand">Branding</button>
+        <button class="chip" data-filter="ads">Iklan</button>
+      </div>
+    </div>
+    <div class="grid3" id="portoGrid">
+      <div class="work reveal" data-cat="web"><div class="work-thumb w1"><svg aria-hidden="true"><use href="#i-cart"/></svg></div><h3>Toko Online Fashion</h3><p>E-commerce + payment gateway · <strong>omzet +187%</strong></p></div>
+      <div class="work reveal" data-cat="brand"><div class="work-thumb w2"><svg aria-hidden="true"><use href="#i-cup"/></svg></div><h3>Rebranding Kopi Nusantara</h3><p>Logo + kemasan · <strong>repeat order +64%</strong></p></div>
+      <div class="work reveal" data-cat="ads"><div class="work-thumb w3"><svg aria-hidden="true"><use href="#i-chart"/></svg></div><h3>Meta Ads Klinik Kecantikan</h3><p>Lead generation · <strong>ROAS 5.2x</strong></p></div>
+      <div class="work reveal" data-cat="web"><div class="work-thumb w4"><svg aria-hidden="true"><use href="#i-chip"/></svg></div><h3>Sistem Akademik Sekolah</h3><p>Web app + PPDB online · <strong>hemat 20 jam/minggu</strong></p></div>
+      <div class="work reveal" data-cat="brand"><div class="work-thumb w5"><svg aria-hidden="true"><use href="#i-building"/></svg></div><h3>Company Profile Properti</h3><p>Profil + brosur premium · <strong>closing +41%</strong></p></div>
+      <div class="work reveal" data-cat="ads"><div class="work-thumb w6"><svg aria-hidden="true"><use href="#i-play"/></svg></div><h3>TikTok Ads Kuliner</h3><p>Konten + ads · <strong>3,2 jt views / 30 hari</strong></p></div>
+    </div>
+    <p class="center reveal"><a class="btn btn-ghost" href="https://wa.me/62895637319465?text=Halo%20Kreativa%20Network!%20Saya%20ingin%20melihat%20portofolio%20lengkap." target="_blank" rel="noopener">Minta Portofolio Lengkap →</a></p>
+  </div>
+</section>
+
+<!-- ===== PROSES ===== -->
+<section class="section alt" id="proses">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">CARA KERJA</span>
+      <h2>Dari Chat Pertama Sampai <span class="grad">Launch</span> — Semudah Ini</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><b>1</b><h3>Konsultasi Gratis</h3><p>Chat WhatsApp, ceritakan kebutuhan & target bisnis Anda.</p></div>
+      <div class="step reveal"><b>2</b><h3>Proposal & Desain</h3><p>Terima penawaran transparan + konsep awal dalam 2–3 hari.</p></div>
+      <div class="step reveal"><b>3</b><h3>Eksekusi & Revisi</h3><p>Pantau progres real-time, revisi sampai Anda puas.</p></div>
+      <div class="step reveal"><b>4</b><h3>Launch & Dampingan</h3><p>Rilis resmi + training + garansi pendampingan 30 hari.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONI ===== -->
+<section class="section" id="testimoni">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">TESTIMONI</span>
+      <h2>Kata Mereka yang Sudah <span class="grad">Naik Kelas</span></h2>
+    </div>
+    <div class="slider reveal" id="slider">
+      <div class="slides">
+        <blockquote class="slide active">“Website dari Kreativa bikin usaha saya kelihatan profesional. Orderan online naik 2x lipat dalam 3 bulan!”<footer>— <strong>Andi R.</strong>, Owner Fashion Store</footer></blockquote>
+        <blockquote class="slide">“Iklannya rapi, laporannya jelas. ROAS kami stabil di atas 4x. Recommended banget.”<footer>— <strong>Bella T.</strong>, Marketing Manager Klinik</footer></blockquote>
+        <blockquote class="slide">“Sistem akademiknya memangkas kerja admin kami drastis. Support-nya juga fast respon.”<footer>— <strong>H. Mahmud</strong>, Kepala Sekolah</footer></blockquote>
+      </div>
+      <div class="dots"><button class="dot active" data-i="0"></button><button class="dot" data-i="1"></button><button class="dot" data-i="2"></button></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HARGA ===== -->
+<section class="section alt" id="harga">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker">INVESTASI</span>
+      <h2>Harga Jujur, <span class="grad">Hasil Maksimal</span></h2>
+      <p>Semua paket bisa custom. Klik untuk diskusi kebutuhan Anda.</p>
+    </div>
+    <div class="grid3">
+      <div class="price-card reveal">
+        <h3>Starter</h3><p class="p-sub">Untuk UMKM baru mulai</p>
+        <p class="p-num">Rp 1,5<small> jt</small></p>
+        <ul class="check"><li>Landing page 1 halaman</li><li>Copywriting dasar</li><li>Integrasi WhatsApp</li><li>Revisi 2x · rilis 7 hari</li></ul>
+        <a class="btn btn-ghost btn-block" href="https://wa.me/62895637319465?text=Halo%20Kreativa%20Network!%20Saya%20tertarik%20paket%20Starter." target="_blank" rel="noopener">Pilih Starter</a>
+      </div>
+      <div class="price-card hot reveal">
+        <span class="hot-tag">PALING LARIS</span>
+        <h3>Bisnis</h3><p class="p-sub">Untuk bisnis bertumbuh</p>
+        <p class="p-num">Rp 4,9<small> jt</small></p>
+        <ul class="check"><li>Company profile 5–8 halaman</li><li>Logo + brand mini-kit</li><li>SEO dasar + analytics</li><li>Revisi 5x · rilis 14 hari</li></ul>
+        <a class="btn btn-primary btn-block" href="https://wa.me/62895637319465?text=Halo%20Kreativa%20Network!%20Saya%20tertarik%20paket%20Bisnis." target="_blank" rel="noopener">Pilih Bisnis</a>
+      </div>
+      <div class="price-card reveal">
+        <h3>Enterprise</h3><p class="p-sub">Software & campaign skala besar</p>
+        <p class="p-num">Custom</p>
+        <ul class="check"><li>Aplikasi / sistem informasi</li><li>Ads management + kreatif</li><li>Dedicated project manager</li><li>SLA & garansi prioritas</li></ul>
+        <a class="btn btn-ghost btn-block" href="https://wa.me/62895637319465?text=Halo%20Kreativa%20Network!%20Saya%20ingin%20penawaran%20paket%20Enterprise." target="_blank" rel="noopener">Minta Penawaran</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section" id="faq">
+  <div class="container narrow">
+    <div class="sec-head reveal">
+      <span class="kicker">FAQ</span>
+      <h2>Pertanyaan yang Sering <span class="grad">Ditanyakan</span></h2>
+    </div>
+    <div class="faq reveal">
+      <details open><summary>Berapa lama pengerjaan website?</summary><p>Landing page ±7 hari, company profile ±14 hari, aplikasi custom 1–3 bulan tergantung kompleksitas. Timeline tertulis jelas di kontrak.</p></details>
+      <details><summary>Apakah ada garansi revisi?</summary><p>Ya. Setiap paket mencakup jatah revisi, dan untuk desain berlaku garansi revisi sampai cocok dalam batas wajar yang disepakati.</p></details>
+      <details><summary>Bagaimana sistem pembayarannya?</summary><p>DP 50% untuk mulai, pelunasan setelah serah terima. Tersedia termin untuk proyek besar. Semua tercatat dalam invoice & kontrak resmi.</p></details>
+      <details><summary>Apakah source code menjadi milik saya?</summary><p>Ya, untuk proyek software/website custom, full source code + dokumentasi diserahkan setelah pelunasan.</p></details>
+      <details><summary>Apakah melayani klien di luar kota?</summary><p>Tentu. 70% klien kami di luar kota — seluruh proses via online (WhatsApp, Zoom, dashboard progres) dengan hasil yang sama rapi.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta" id="kontak">
+  <div class="container cta-box reveal">
+    <h2>Siap Membuat Bisnis Anda <span class="grad">Terlihat Mahal & Dipercaya?</span></h2>
+    <p>Konsultasi <strong>100% gratis, tanpa komitmen</strong>. Ceritakan kebutuhan Anda — kami beri solusi & estimasi biaya dalam 1×24 jam.</p>
+    <form class="wa-form" id="waForm">
+      <input type="text" id="fNama" placeholder="Nama Anda" required>
+      <select id="fButuh" required>
+        <option value="">— Saya butuh… —</option>
+        <option>Website / IT Solution</option>
+        <option>Software / Aplikasi</option>
+        <option>Advertising / Digital Marketing</option>
+        <option>Design / Branding</option>
+        <option>Lainnya / Konsultasi dulu</option>
+      </select>
+      <button class="btn btn-primary btn-lg" type="submit"><svg class="mi" aria-hidden="true"><use href="#i-wa"/></svg> Kirim via WhatsApp</button>
+    </form>
+    <p class="cta-alt">Atau chat langsung: <a href="https://wa.me/62895637319465" target="_blank" rel="noopener"><strong>+62 895-6373-19465</strong></a></p>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container foot-grid">
+    <div>
+      <img class="foot-logo" src="logo.png" alt="Kreativa Network">
+      <p>Jasa kreatif & digital: IT solution, software development, advertising, dan design. Satu partner untuk brand yang siap naik kelas.</p>
+    </div>
+    <div><h4>Layanan</h4><a href="#layanan">IT Solution</a><a href="#layanan">Software Development</a><a href="#layanan">Advertising</a><a href="#layanan">Design & Branding</a></div>
+    <div><h4>Navigasi</h4><a href="#portofolio">Portofolio</a><a href="#harga">Harga</a><a href="#faq">FAQ</a><a href="#kontak">Kontak</a></div>
+    <div><h4>Hubungi Kami</h4><a href="https://wa.me/62895637319465" target="_blank" rel="noopener"><svg class="mi" aria-hidden="true"><use href="#i-wa"/></svg> +62 895-6373-19465</a><a href="mailto:halo@kreativa-network.id"><svg class="mi" aria-hidden="true"><use href="#i-mail"/></svg> halo@kreativa-network.id</a><span class="jam"><svg class="mi" aria-hidden="true"><use href="#i-clock"/></svg> Senin–Sabtu · 09.00–18.00 WIB</span></div>
+  </div>
+  <div class="foot-base">© <span id="year"></span> Kreativa Network. Seluruh hak cipta dilindungi. <span class="syarat">*Syarat & ketentuan garansi berlaku.</span></div>
+</footer>
+
+<!-- ===== FLOATING ===== -->
+<a class="wa-float" href="https://wa.me/62895637319465?text=Halo%20Kreativa%20Network!%20Saya%20ingin%20konsultasi." target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+  <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 2 6.5L4 29l7.7-2c1.8 1 3.9 1.5 4.3 1.5 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.5 0-3-.4-4.3-1.2l-.3-.2-4.6 1.2 1.2-4.5-.2-.3c-.9-1.4-1.4-3-1.4-4.7C6.5 9.8 10.8 5.5 16 5.5S25.5 9.8 25.5 15 21.2 24.8 16 24.8zm5.2-7.1c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 1.1-.2.2-.3.3-.7.1-.3-.1-1.4-.5-2.7-1.6-.9-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.6l.9-1c.1-.2.2-.4.3-.5.1-.2 0-.3 0-.4-.1-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.2-.8.7-.3.5-1 1.2-1 3s1.1 3.5 1.2 3.7c.1.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+<button class="top-btn" id="topBtn" aria-label="Kembali ke atas">↑</button>
+<div class="toast" id="toast">Membuka WhatsApp…</div>
+
+<script src="script.js"></script>
+</body>
+</html>
