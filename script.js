@@ -119,8 +119,9 @@ document.getElementById("waForm").addEventListener("submit", e => {
   e.preventDefault();
   const nama = document.getElementById("fNama").value.trim();
   const butuh = document.getElementById("fButuh").value;
-  const msg = `Halo Kreativa Network! Saya ${nama}. Saya butuh: ${butuh}. Mohon info & penawarannya, terima kasih.`;
-  toast.textContent = `Terima kasih ${nama}! Membuka WhatsApp…`;
+  const T = window.KN_T || function () { return ""; };
+  const msg = T("waFormTpl", { nama: nama, butuh: butuh }) || `Halo Kreativa Network! Saya ${nama}. Saya butuh: ${butuh}. Mohon info & penawarannya, terima kasih.`;
+  toast.textContent = T("toastThanks", { nama: nama }) || `Terima kasih ${nama}! Membuka WhatsApp…`;
   toast.classList.add("show");
   setTimeout(() => {
     window.open(waLink(msg), "_blank");
@@ -128,16 +129,20 @@ document.getElementById("waForm").addEventListener("submit", e => {
   }, 900);
 });
 
-// 11. Kata berputar di headline hero
+// 11. Kata berputar di headline hero (mengikuti bahasa aktif via lang.js)
 const rotWord = document.getElementById("rotWord");
+function KN_words() {
+  return window.KN_ROT || ["Mesin Penjualan", "Brand Premium", "Omzet Berlipat", "Bisnis Naik Kelas"];
+}
+let KN_wi = 0;
+window.KN_ROTres = function () { KN_wi = 0; };
 if (rotWord && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  const words = ["Mesin Penjualan", "Brand Premium", "Omzet Berlipat", "Bisnis Naik Kelas"];
-  let wi = 0;
   setInterval(() => {
     rotWord.classList.add("out");
     setTimeout(() => {
-      wi = (wi + 1) % words.length;
-      rotWord.textContent = words[wi];
+      const words = KN_words();
+      KN_wi = (KN_wi + 1) % words.length;
+      rotWord.textContent = words[KN_wi];
       rotWord.classList.remove("out");
       rotWord.classList.add("in");
       setTimeout(() => rotWord.classList.remove("in"), 480);

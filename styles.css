@@ -364,3 +364,23 @@ body.gated.loaded .lead .hl{animation:hl .7s ease backwards;animation-delay:var(
 .nav-mark{width:42px;height:42px;background-size:99px;background-position:-30.4px -13.9px;border-radius:9px}
 .pre-k .logo-crop{width:72px;height:72px;background-size:169.7px;background-position:-52.1px -23.8px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
 .foot-logo{width:148px;border-radius:14px;display:block}
+
+/* ===== LANGUAGE SWITCHER ===== */
+.lang-sw{display:inline-flex;background:#eef3fb;border:1px solid var(--line);border-radius:999px;padding:3px;gap:2px}
+.lang-btn{border:0;background:transparent;font-family:var(--font-d);font-weight:700;font-size:12px;letter-spacing:.5px;color:var(--muted);padding:6px 11px;border-radius:999px;cursor:pointer;transition:.25s}
+.lang-btn:hover{color:var(--blue)}
+.lang-btn.active{background:var(--navy);color:#fff;box-shadow:0 4px 12px -4px rgba(10,37,64,.5)}
+.lang-sw.in-menu{display:none}
+
+/* ===== RTL (ARAB) ===== */
+[dir="rtl"] .kicker,[dir="rtl"] .stat .label,[dir="rtl"] .brand-text,[dir="rtl"] .brand-text small,[dir="rtl"] .marquee,[dir="rtl"] .pre-brand,[dir="rtl"] .pre-brand em,[dir="rtl"] .hot-tag,[dir="rtl"] .lang-btn{letter-spacing:0}
+[dir="rtl"] body,[dir="rtl"] h1,[dir="rtl"] h2,[dir="rtl"] h3{font-family:'Sora','Inter',Tahoma,Arial,sans-serif}
+[dir="rtl"] .check li{padding:7px 32px 7px 0}
+[dir="rtl"] .check li::before{left:auto;right:0}
+[dir="rtl"] .avatars span{margin-left:0;margin-right:-10px}
+[dir="rtl"] .avatars span:first-child{margin-right:0}
+
+@media(max-width:640px){
+  .nav-cta .lang-sw{display:none}
+  .lang-sw.in-menu{display:inline-flex;align-self:flex-start;margin-top:4px}
+}
